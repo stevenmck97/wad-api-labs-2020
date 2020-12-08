@@ -1,6 +1,11 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import moviesRouter from './api/movies';
+import bodyParser from 'body-parser';
+
+//configure body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 
 dotenv.config();
 

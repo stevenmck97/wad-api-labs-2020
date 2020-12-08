@@ -40,4 +40,4 @@ export const moviesObject = {
         "vote_average": 7.4
       }
     ]
-  }
+  };
