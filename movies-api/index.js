@@ -4,7 +4,7 @@ import moviesRouter from './api/movies';
 import bodyParser from 'body-parser';
 import './db';
 import usersRouter from './api/users';
-import {loadUsers} from './seedData';
+import {loadUsers, loadMovies} from './seedData';
 import genresRouter from './api/genres';
 import session from 'express-session';
 import passport from './authenticate';
@@ -51,5 +51,6 @@ app.listen(port, () => {
 
 if (process.env.SEED_DB) {
   loadUsers();
+  loadMovies();
 }
 
