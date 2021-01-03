@@ -67,7 +67,7 @@ router.post('/:userName/favourites', async (req, res, next) => {
         const movie = await movieModel.findByMovieDBId(newFavourite);
         const user = await User.findByUserName(userName);
         // const duplicate = await User.findOne(user.favourites);
-        // if (duplicate = true) {
+        // if (duplicate === true) {
             // res.status(403).send(`This movie is already in this user's favourites`)
             //     .catch((error) => next(error));
         // } else {
