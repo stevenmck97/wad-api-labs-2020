@@ -3,6 +3,8 @@ import bcrypt from 'bcrypt-nodejs';
 
 const Schema = mongoose.Schema;
 
+// var passw = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,}$/;
+
 
 const UserSchema = new Schema({
   username: { type: String, unique: true, required: true},
